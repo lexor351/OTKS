@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "title": "Айхал",
+    "image": [
+      "/uploads/images/aihal/aihal1.jpg",
+      "/uploads/images/aihal/aihal2.jpg"
+    ],
+    "tableData": "{\"Виталий Юрьевич Иванов (директор аэропорта)\":\"+7 914 295-06-86\",\"Лариса Александровна Бахматова (АМСГ)\":\"+7 924 363-75-10\"}"
+  },
+  {
+    "id": 2,
+    "title": "Алдан",
+    "image": [
+      "/uploads/images/aldan/aldan1.jpg",
+      "/uploads/images/aldan/aldan2.jpg",
+      "/uploads/images/aldan/aldan3.jpg",
+      "/uploads/images/aldan/aldan4.jpg",
+      "/uploads/images/aldan/aldan5.jpg",
+      "/uploads/images/aldan/aldan6.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 3,
+    "title": "Батагай",
+    "image": [
+      "/uploads/images/batagay/batagay1.jpg",
+      "/uploads/images/batagay/batagay2.jpg",
+      "/uploads/images/batagay/batagay3.jpg",
+      "/uploads/images/batagay/batagay4.jpg",
+      "/uploads/images/batagay/batagay5.jpg",
+      "/uploads/images/batagay/batagay6.jpg",
+      "/uploads/images/batagay/batagay7.jpg",
+      "/uploads/images/batagay/batagay8.jpg",
+      "/uploads/images/batagay/batagay9.jpg",
+      "/uploads/images/batagay/batagay10.jpg"
+    ],
+   "tableData": "{\"Сергей Валов (инженер АС-ВС)\":\"+7 914 109-85-57\"}"
+  },
+
+  {
+    "id": 4,
+    "title": "Белая Гора",
+    "image": [
+      "/uploads/images/belayagora/belayagora1.jpg",
+      "/uploads/images/belayagora/belayagora2.jpg",
+      "/uploads/images/belayagora/belayagora3.jpg",
+      "/uploads/images/belayagora/belayagora4.jpg",
+      "/uploads/images/belayagora/belayagora5.jpg",
+      "/uploads/images/belayagora/belayagora6.jpg",
+      "/uploads/images/belayagora/belayagora7.jpg",
+      "/uploads/images/belayagora/belayagora8.jpg",
+      "/uploads/images/belayagora/belayagora9.jpg",
+      "/uploads/images/belayagora/belayagora10.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 5,
+    "title": "Верхневилюйск",
+    "image": [
+      "/uploads/images/verhnevilyuysk/verhnevilyuysk1.jpg",
+      "/uploads/images/verhnevilyuysk/verhnevilyuysk2.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 6,
+    "title": "Вилюйск",
+    "image": [
+      "/uploads/images/vilyuysk/vilyuysk1.jpg",
+      "/uploads/images/vilyuysk/vilyuysk2.jpg",
+      "/uploads/images/vilyuysk/vilyuysk3.jpg",
+      "/uploads/images/vilyuysk/vilyuysk4.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 7,
+    "title": "Депутатский",
+    "image": [
+      "/uploads/images/deputatskiy/deputatskiy1.jpg",
+      "/uploads/images/deputatskiy/deputatskiy2.jpg",
+      "/uploads/images/deputatskiy/deputatskiy3.jpg"
+    ],
+    "tableData": "{\"Сергей Витальевич Трифонов  (директор аэропорта)\":\"+7 924 468-03-78\"}"
+  },
+
+  {
+    "id": 8,
+    "title": "Жиганск",
+    "image": [
+      "/uploads/images/zhigansk/zhigansk1.jpg",
+      "/uploads/images/zhigansk/zhigansk2.jpg",
+      "/uploads/images/zhigansk/zhigansk3.jpg",
+      "/uploads/images/zhigansk/zhigansk4.jpg",
+      "/uploads/images/zhigansk/zhigansk5.jpg",
+      "/uploads/images/zhigansk/zhigansk6.jpg",
+      "/uploads/images/zhigansk/zhigansk7.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 9,
+    "title": "Маган",
+    "image": [
+      "/uploads/images/magan/magan1.jpg",
+      "/uploads/images/magan/magan2.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+    {
+    "id": 10,
+    "title": "Мирный",
+    "image": [
+      "/uploads/images/mirniy/mirniy1.jpg",
+      "/uploads/images/mirniy/mirniy2.jpg",
+      "/uploads/images/mirniy/mirniy3.jpg",
+      "/uploads/images/mirniy/mirniy4.jpg",
+      "/uploads/images/mirniy/mirniy5.jpg",
+      "/uploads/images/mirniy/mirniy6.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 11,
+    "title": "Мома",
+    "image": [
+      "/uploads/images/moma/moma1.jpg",
+      "/uploads/images/moma/moma2.jpg",
+      "/uploads/images/moma/moma3.jpg",
+      "/uploads/images/moma/moma4.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 12,
+    "title": "Нюрба",
+    "image": [
+      "/uploads/images/nurba/nurba1.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 13,
+    "title": "Олёкминск",
+    "image": [
+      "/uploads/images/olekminsk/olekminsk1.jpeg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 14,
+    "title": "Оленёк",
+    "image": [
+      "/uploads/images/olenek/olenek1.jpg",
+      "/uploads/images/olenek/olenek2.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 15,
+    "title": "Саккырыр",
+    "image": [
+      "/uploads/images/sakkirir/sakkirir1.jpg",
+      "/uploads/images/sakkirir/sakkirir2.jpg"
+    ],
+    "tableData": "{\"Николай Аммосов (техник АС-ВС)\":\"+7 914 224-86-96\"}"
+  },
+
+  {
+    "id": 16,
+    "title": "Сангар",
+    "image": [
+      "/uploads/images/sangar/sangar1.jpeg",
+      "/uploads/images/sangar/sangar2.jpeg",
+      "/uploads/images/sangar/sangar3.jpeg",
+      "/uploads/images/sangar/sangar4.jpeg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 17,
+    "title": "Саскылах",
+    "image": [
+      "/uploads/images/saskylah/saskylah1.jpg",
+      "/uploads/images/saskylah/saskylah2.jpg",
+      "/uploads/images/saskylah/saskylah3.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 18,
+    "title": "Среднеколымск",
+    "image": [
+      "/uploads/images/srednekolimsk/srednekolimsk1.jpg",
+      "/uploads/images/srednekolimsk/srednekolimsk2.jpg",
+      "/uploads/images/srednekolimsk/srednekolimsk3.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+    {
+    "id": 19,
+    "title": "Сунтар",
+    "image": [
+      "/uploads/images/suntar/suntar1.jpg",
+      "/uploads/images/suntar/suntar2.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 20,
+    "title": "Талакан",
+    "image": [
+      "/uploads/images/talakan/talakan1.jpg",
+      "/uploads/images/talakan/talakan2.jpg",
+      "/uploads/images/talakan/talakan3.jpg",
+      "/uploads/images/talakan/talakan4.jpg",
+      "/uploads/images/talakan/talakan5.jpg",
+      "/uploads/images/talakan/talakan6.jpg",
+      "/uploads/images/talakan/talakan7.jpg",
+      "/uploads/images/talakan/talakan8.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 21,
+    "title": "Удачный",
+    "image": [
+      "/uploads/images/udachniy/udachniy1.jpg",
+      "/uploads/images/udachniy/udachniy2.jpg"
+    ],
+    "tableData": "{\"Вячеслав Вохмин (инженер-электроник АС-ВС)\":\"+7 924 163-74-57\"}"
+  },
+
+  {
+    "id": 22,
+    "title": "Усть-Куйга",
+    "image": [
+      "/uploads/images/kuyga/kuyga1.jpg",
+      "/uploads/images/kuyga/kuyga2.jpg"
+    ],
+    "tableData": "{\"Артём Севостьянов (техник АС-ВС)\":\"+7 924 364-59-64\"}"
+  },
+
+  {
+    "id": 23,
+    "title": "Усть-Мая",
+    "image": [
+      "/uploads/images/maya/maya1.jpg",
+      "/uploads/images/maya/maya2.jpg",
+      "/uploads/images/maya/maya3.jpg",
+      "/uploads/images/maya/maya4.jpg",
+      "/uploads/images/maya/maya5.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 24,
+    "title": "Усть-Нера",
+    "image": [
+      "/uploads/images/nera/nera1.jpg",
+      "/uploads/images/nera/nera2.jpg",
+      "/uploads/images/nera/nera3.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 25,
+    "title": "Черский",
+    "image": [
+      "/uploads/images/cherskiy/cherskiy1.jpg",
+      "/uploads/images/cherskiy/cherskiy2.jpg",
+      "/uploads/images/cherskiy/cherskiy3.jpg",
+      "/uploads/images/cherskiy/cherskiy4.jpg",
+      "/uploads/images/cherskiy/cherskiy5.jpg",
+      "/uploads/images/cherskiy/cherskiy6.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  },
+
+  {
+    "id": 26,
+    "title": "Чокурдах",
+    "image": [
+      "/uploads/images/chokurdah/chokurdah1.jpg",
+      "/uploads/images/chokurdah/chokurdah2.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  }, 
+
+  {
+    "id": 27,
+    "title": "Чульман",
+    "image": [
+      "/uploads/images/chulman/chulman1.jpg",
+      "/uploads/images/chulman/chulman2.jpg",
+      "/uploads/images/chulman/chulman3.jpg",
+      "/uploads/images/chulman/chulman4.jpg"
+    ],
+    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+  }
+]

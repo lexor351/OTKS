@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "www.yakutia.ru",
+    "url": "https://www.yakutia.ru/user ",
+    "description": "Сайт ВЦ Якутавиа (Админ панель)"
+  },
+  {
+    "id": 2,
+    "title": "Vsat.yakutia.ru",
+    "url": "https://vsat.yakutia.ru ",
+    "description": "Сайт ВЦ Якутавиа"
+  },
+
+  {
+    "id": 3,
+    "title": "phpipam",
+    "url": "http://phpipam.yakutia.ru/login/ ",
+    "description": " "
+  },
+
+  {
+    "id": 4,
+    "title": "jadm",
+    "url": "https://jadm.yakutia.ru/mailadmin/login.php ",
+    "description": "Вход для администраторов почтовых доменов "
+  }
+]

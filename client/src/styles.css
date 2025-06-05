@@ -1,0 +1,302 @@
+/* Базовые стили */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #001F3F;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #001F3F;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+main {
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: #f9f9f9;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Центр контента на всех страницах */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Красивая таблица */
+.data-table {
+  width: 100%;
+  max-width: 800px; /* макс ширина таблицы */
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.data-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Красивые вкладки */
+.tab-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 0.6rem 1.2rem;
+  background: #001F3F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.tab-button:hover {
+  background: #00477D;
+}
+
+.tab-button.active {
+  background: #00477D;
+}
+
+/* Картинка во вкладках */
+.tab-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.markdown-output {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  line-height: 1.6;
+  max-width: 800px;
+  width: 100%;
+}
+
+.markdown-output h1,
+.markdown-output h2,
+.markdown-output h3 {
+  color: #001F3F;
+  margin-top: 1.5rem;
+}
+
+.markdown-output p {
+  margin-bottom: 1rem;
+}
+
+.markdown-output code {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* стили для изображений */
+.tab-images img {
+  width: 30%; /* По 2 изображения в строке */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.tab-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Темная тема */
+body.dark-mode {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+body.dark-mode header {
+  background: #1a1a1a;
+}
+
+body.dark-mode .data-table {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode .data-table th,
+body.dark-mode .data-table td {
+  border-color: #444;
+  color: #f5f5f5;
+  background-color: #2d2d2d;
+}
+
+body.dark-mode .data-table th {
+  background-color: #3c3c3c;
+}
+
+/* Стили для кнопок "Перейти" */
+a.links-page {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+body.dark-mode a.links-page  {
+  color: hsl(281, 76%, 50%);
+}
+
+body.dark-mode a.links-page :hover {
+  background-color: rgba(0, 123, 255, 0.3); /* При наведении */
+}
+
+a.links-page :focus,
+a.links-page :active {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
+
+/* Стили для Markdown контента */
+.markdown-output {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+body.dark-mode .markdown-output {
+  background: #2d2d2d;
+  color: #f5f5f5;
+}
+
+/* Стили для темной темы */
+body.dark-mode .markdown-output h1,
+body.dark-mode .markdown-output h2,
+body.dark-mode .markdown-output h3,
+body.dark-mode .markdown-output h4,
+body.dark-mode .markdown-output h5,
+body.dark-mode .markdown-output h6 {
+  color: #f5f5f5; /* Белый цвет заголовков */
+}
+
+body.dark-mode .markdown-output code,
+body.dark-mode .markdown-output pre {
+  background-color: #3c3c3c; /* Серый фон для кода */
+  color: #f5f5f5; /* Белый текст для кода */
+}
+
+/* Стили для переключателя темы */
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #001b31;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #001b31;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Темная тема */
+body.dark-mode .slider {
+  background-color: #888;
+}
+
+body.dark-mode input:checked + .slider {
+  background-color: hsl(207, 98%, 19%);
+}
+
+body.dark-mode .slider:before {
+  background-color: #f1f1f1;
+}
