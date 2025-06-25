@@ -1,47 +1,43 @@
 const fs = require('fs');
 const path = require('path');
-const marked = require('marked');
-const multer = require('multer');
 
-
-// Путь к папке с инструкциями
 const INSTRUCTIONS_DIR = path.join(__dirname, '../uploads/instructions');
 
-console.log('Путь к файлам:', INSTRUCTIONS_DIR);
-
-// Настройка загрузки файлов
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, INSTRUCTIONS_DIR);
-  },
-  filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname);
-    const filename = `${Date.now()}-${file.originalname}`;
-    cb(null, filename);
-  }
-});
-
-const upload = multer({ storage });
-
-// Получить список файлов
-exports.getAllInstructions = (req, res) => {
+// Получить список категорий (папок)
+exports.getCategories = (req, res) => {
   try {
-    if (!fs.existsSync(INSTRUCTIONS_DIR)) {
-      fs.mkdirSync(INSTRUCTIONS_DIR, { recursive: true });
-    }
-
-    const files = fs.readdirSync(INSTRUCTIONS_DIR).filter(f => f.endsWith('.md'));
-    return res.json(files);
+    const categories = fs.readdirSync(INSTRUCTIONS_DIR).filter(file =>
+      fs.statSync(path.join(INSTRUCTIONS_DIR, file)).isDirectory()
+    );
+    res.json(categories);
   } catch (err) {
-    console.error('Ошибка чтения файлов:', err);
-    return res.status(500).json({ error: 'Не удалось получить список файлов' });
+    console.error('Ошибка получения категорий:', err);
+    res.status(500).json({ error: 'Не удалось получить категории' });
+  }
+};
+
+// Получить список файлов в категории
+exports.getFilesByCategory = (req, res) => {
+  const { category } = req.params;
+  const dirPath = path.join(INSTRUCTIONS_DIR, category);
+
+  if (!fs.existsSync(dirPath)) {
+    return res.status(404).json({ error: 'Категория не найдена' });
+  }
+
+  try {
+    const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.md'));
+    res.json(files);
+  } catch (err) {
+    console.error(`Ошибка чтения файлов из ${category}:`, err);
+    res.status(500).json({ error: 'Не удалось прочитать файлы' });
   }
 };
 
 // Получить содержимое файла
-exports.getInstruction = (req, res) => {
-  const { filename } = req.params;
-  const filePath = path.join(INSTRUCTIONS_DIR, filename);
+exports.getFileContent = (req, res) => {
+  const { category, filename } = req.params;
+  const filePath = path.join(INSTRUCTIONS_DIR, category, filename);
 
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: 'Файл не найден' });
@@ -49,16 +45,9 @@ exports.getInstruction = (req, res) => {
 
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
-    res.json({ filename, content: marked.parse(content) });
+    res.json({ content });
   } catch (err) {
-    console.error('Ошибка чтения файла:', err);
-    res.status(500).json({ error: 'Не удалось прочитать содержимое файла' });
+    console.error(`Ошибка чтения файла ${filename}:`, err);
+    res.status(500).json({ error: 'Не удалось прочитать файл' });
   }
-};
-
-// Загрузить файл
-exports.uploadInstruction = upload.single('file');
-exports.uploadInstruction = (req, res) => {
-  const filename = req.file.filename;
-  res.json({ filename });
 };

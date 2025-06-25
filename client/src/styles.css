@@ -7,6 +7,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -299,4 +300,139 @@ body.dark-mode input:checked + .slider {
 
 body.dark-mode .slider:before {
   background-color: #f1f1f1;
+}
+
+.tab-list.level-1 {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-list.level-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tab-button {
+  padding: 0.6rem 1.2rem;
+  background: #001F3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tab-button:hover {
+  background: #00477D;
+}
+
+.tab-button.active {
+  background: #00477D;
+}
+
+.markdown-output {
+  margin-top: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Стили для шапки */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #001F3F;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Центрирование меню */
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 auto; /* Отправляет nav в центр */
+  text-align: center;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem; /* Увеличенный размер */
+  font-weight: 500;   /* Чуть жирнее */
+  transition: opacity 0.3s ease;
+}
+
+.main-nav a:hover {
+  opacity: 0.8;
+}
+
+/* Переключатель темы */
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Темная тема */
+body.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .main-nav a {
+  color: #f5f5f5;
 }

@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router();
 const instructionController = require('../controllers/instructionController');
 
-// Получить список всех .md файлов
-router.get('/instructions', instructionController.getAllInstructions);
+// Получить категории
+router.get('/instructions', instructionController.getCategories);
+
+// Получить файлы по категории
+router.get('/instructions/:category', instructionController.getFilesByCategory);
 
 // Получить содержимое конкретного файла
-router.get('/instructions/:filename', instructionController.getInstruction);
-
-// Загрузить новый файл (POST)
-router.post('/instructions/upload', instructionController.uploadInstruction);
+router.get('/instructions/:category/:filename', instructionController.getFileContent);
 
 module.exports = router;

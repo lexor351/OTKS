@@ -4,7 +4,9 @@
     "title": "Айхал",
     "image": [
       "/uploads/images/aihal/aihal1.jpg",
-      "/uploads/images/aihal/aihal2.jpg"
+      "/uploads/images/aihal/aihal2.jpg",
+      "/uploads/images/aihal/aihal3.jpg",
+      "/uploads/images/aihal/aihal4.jpg"
     ],
     "tableData": "{\"Виталий Юрьевич Иванов (директор аэропорта)\":\"+7 914 295-06-86\",\"Лариса Александровна Бахматова (АМСГ)\":\"+7 924 363-75-10\"}"
   },
@@ -19,7 +21,7 @@
       "/uploads/images/aldan/aldan5.jpg",
       "/uploads/images/aldan/aldan6.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
@@ -55,7 +57,7 @@
       "/uploads/images/belayagora/belayagora9.jpg",
       "/uploads/images/belayagora/belayagora10.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{\"АМСГ\":\"8 411 592-12-60\"}"
   },
 
   {
@@ -63,9 +65,10 @@
     "title": "Верхневилюйск",
     "image": [
       "/uploads/images/verhnevilyuysk/verhnevilyuysk1.jpg",
-      "/uploads/images/verhnevilyuysk/verhnevilyuysk2.jpg"
+      "/uploads/images/verhnevilyuysk/verhnevilyuysk2.jpg",
+      "/uploads/images/verhnevilyuysk/verhnevilyuysk3.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
@@ -77,11 +80,20 @@
       "/uploads/images/vilyuysk/vilyuysk3.jpg",
       "/uploads/images/vilyuysk/vilyuysk4.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
+  },
+
+    {
+    "id": 7,
+    "title": "Витим",
+    "image": [
+      "/uploads/images/vitim/vitim.jpg"
+    ],
+    "tableData": "{}"
   },
 
   {
-    "id": 7,
+    "id": 8,
     "title": "Депутатский",
     "image": [
       "/uploads/images/deputatskiy/deputatskiy1.jpg",
@@ -92,7 +104,7 @@
   },
 
   {
-    "id": 8,
+    "id": 9,
     "title": "Жиганск",
     "image": [
       "/uploads/images/zhigansk/zhigansk1.jpg",
@@ -103,21 +115,21 @@
       "/uploads/images/zhigansk/zhigansk6.jpg",
       "/uploads/images/zhigansk/zhigansk7.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 9,
+    "id": 10,
     "title": "Маган",
     "image": [
       "/uploads/images/magan/magan1.jpg",
       "/uploads/images/magan/magan2.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
     {
-    "id": 10,
+    "id": 11,
     "title": "Мирный",
     "image": [
       "/uploads/images/mirniy/mirniy1.jpg",
@@ -127,11 +139,11 @@
       "/uploads/images/mirniy/mirniy5.jpg",
       "/uploads/images/mirniy/mirniy6.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 11,
+    "id": 12,
     "title": "Мома",
     "image": [
       "/uploads/images/moma/moma1.jpg",
@@ -139,39 +151,40 @@
       "/uploads/images/moma/moma3.jpg",
       "/uploads/images/moma/moma4.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
-  },
-
-  {
-    "id": 12,
-    "title": "Нюрба",
-    "image": [
-      "/uploads/images/nurba/nurba1.jpg"
-    ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
     "id": 13,
-    "title": "Олёкминск",
+    "title": "Нюрба",
     "image": [
-      "/uploads/images/olekminsk/olekminsk1.jpeg"
+      "/uploads/images/nurba/nurba1.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
     "id": 14,
-    "title": "Оленёк",
+    "title": "Олёкминск",
     "image": [
-      "/uploads/images/olenek/olenek1.jpg",
-      "/uploads/images/olenek/olenek2.jpg"
+      "/uploads/images/olekminsk/olekminsk1.jpeg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
     "id": 15,
+    "title": "Оленёк",
+    "image": [
+      "/uploads/images/olenek/olenek1.jpg",
+      "/uploads/images/olenek/olenek2.jpg",
+      "/uploads/images/olenek/olenek3.jpg"
+    ],
+    "tableData": "{}"
+  },
+
+  {
+    "id": 16,
     "title": "Саккырыр",
     "image": [
       "/uploads/images/sakkirir/sakkirir1.jpg",
@@ -181,7 +194,7 @@
   },
 
   {
-    "id": 16,
+    "id": 17,
     "title": "Сангар",
     "image": [
       "/uploads/images/sangar/sangar1.jpeg",
@@ -189,43 +202,43 @@
       "/uploads/images/sangar/sangar3.jpeg",
       "/uploads/images/sangar/sangar4.jpeg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 17,
+    "id": 18,
     "title": "Саскылах",
     "image": [
       "/uploads/images/saskylah/saskylah1.jpg",
       "/uploads/images/saskylah/saskylah2.jpg",
       "/uploads/images/saskylah/saskylah3.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 18,
+    "id": 19,
     "title": "Среднеколымск",
     "image": [
       "/uploads/images/srednekolimsk/srednekolimsk1.jpg",
       "/uploads/images/srednekolimsk/srednekolimsk2.jpg",
       "/uploads/images/srednekolimsk/srednekolimsk3.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
     {
-    "id": 19,
+    "id": 20,
     "title": "Сунтар",
     "image": [
       "/uploads/images/suntar/suntar1.jpg",
       "/uploads/images/suntar/suntar2.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 20,
+    "id": 21,
     "title": "Талакан",
     "image": [
       "/uploads/images/talakan/talakan1.jpg",
@@ -237,21 +250,33 @@
       "/uploads/images/talakan/talakan7.jpg",
       "/uploads/images/talakan/talakan8.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
+  },
+
+    {
+    "id": 22,
+    "title": "Тикси",
+    "image": [
+      "/uploads/images/tiksi/tiksi.jpg",
+      "/uploads/images/tiksi/tiksi2.jpg",
+      "/uploads/images/tiksi/tiksi3.jpg"
+    ],
+    "tableData": "{}"
   },
 
   {
-    "id": 21,
+    "id": 23,
     "title": "Удачный",
     "image": [
       "/uploads/images/udachniy/udachniy1.jpg",
-      "/uploads/images/udachniy/udachniy2.jpg"
+      "/uploads/images/udachniy/udachniy2.jpg",
+      "/uploads/images/udachniy/udachniy3.jpg"
     ],
     "tableData": "{\"Вячеслав Вохмин (инженер-электроник АС-ВС)\":\"+7 924 163-74-57\"}"
   },
 
   {
-    "id": 22,
+    "id": 24,
     "title": "Усть-Куйга",
     "image": [
       "/uploads/images/kuyga/kuyga1.jpg",
@@ -261,7 +286,7 @@
   },
 
   {
-    "id": 23,
+    "id": 25,
     "title": "Усть-Мая",
     "image": [
       "/uploads/images/maya/maya1.jpg",
@@ -270,22 +295,22 @@
       "/uploads/images/maya/maya4.jpg",
       "/uploads/images/maya/maya5.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 24,
+    "id": 26,
     "title": "Усть-Нера",
     "image": [
       "/uploads/images/nera/nera1.jpg",
       "/uploads/images/nera/nera2.jpg",
       "/uploads/images/nera/nera3.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 25,
+    "id": 27,
     "title": "Черский",
     "image": [
       "/uploads/images/cherskiy/cherskiy1.jpg",
@@ -295,21 +320,21 @@
       "/uploads/images/cherskiy/cherskiy5.jpg",
       "/uploads/images/cherskiy/cherskiy6.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   },
 
   {
-    "id": 26,
+    "id": 28,
     "title": "Чокурдах",
     "image": [
       "/uploads/images/chokurdah/chokurdah1.jpg",
       "/uploads/images/chokurdah/chokurdah2.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   }, 
 
   {
-    "id": 27,
+    "id": 29,
     "title": "Чульман",
     "image": [
       "/uploads/images/chulman/chulman1.jpg",
@@ -317,6 +342,6 @@
       "/uploads/images/chulman/chulman3.jpg",
       "/uploads/images/chulman/chulman4.jpg"
     ],
-    "tableData": "{\"Параметр\":\"Значение\",\"Единица\":\"м/с\"}"
+    "tableData": "{}"
   }
 ]

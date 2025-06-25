@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Статические файлы (для изображений)
 app.use('/uploads', express.static(path.join(__dirname,'uploads')));
+app.use('/uploads', express.static('server/uploads'));
 
 
 // Маршруты

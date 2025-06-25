@@ -27,17 +27,20 @@ export default function Header() {
   return (
     <header className={isDarkMode ? 'dark' : 'light'}>
       <div className="logo">ОТКС</div>
-      <nav>
+
+      {/* Центрированное меню */}
+      <nav className="main-nav">
         <a href="/">Главная</a>
         <a href="/contacts">Контакты</a>
         <a href="/instructions">Инструкции</a>
         <a href="/links">Ссылки</a>
-        {/* Переключатель темы */}
-        <label className="theme-toggle">
-          <input type="checkbox" checked={isDarkMode} onChange={toggleTheme} />
-          <span className="slider round"></span>
-        </label>
       </nav>
+
+      {/* Кнопка темы — справа */}
+      <label className="theme-toggle">
+        <input type="checkbox" checked={isDarkMode} onChange={toggleTheme} />
+        <span className="slider round"></span>
+      </label>
     </header>
   );
 }

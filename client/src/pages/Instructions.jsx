@@ -2,60 +2,52 @@ import React, { useEffect, useState } from 'react';
 import { marked } from 'marked';
 
 export default function Instructions() {
+  const [categories, setCategories] = useState([]);
+  const [activeCategory, setActiveCategory] = useState(null);
   const [files, setFiles] = useState([]);
   const [activeFile, setActiveFile] = useState('');
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(true);
 
-  // Получаем список файлов
+  // Загрузка категорий
   useEffect(() => {
     fetch('http://localhost:80/api/instructions')
       .then(res => res.json())
       .then(data => {
-        setFiles(data);
-        if (data.length > 0) {
-          setActiveFile(data[0]);
-        }
+        setCategories(data);
+        if (data.length > 0) setActiveCategory(data[0]);
       })
-      .catch(err => console.error('Ошибка загрузки инструкций:', err))
+      .catch(err => console.error('Ошибка загрузки категорий:', err))
       .finally(() => setLoading(false));
   }, []);
 
-  // Получаем содержимое файла
+  // Загрузка файлов по категории
   useEffect(() => {
-    if (!activeFile) return;
+    if (!activeCategory) return;
 
-    fetch(`http://localhost:80/api/instructions/${activeFile}`)
+    fetch(`http://localhost:80/api/instructions/${activeCategory}`)
       .then(res => res.json())
       .then(data => {
-        setContent(marked.parse(data.content)); // Используем marked.parse()
+        setFiles(data);
+        if (data.length > 0) setActiveFile(data[0]);
       })
-      .catch(err => {
-        console.error('Ошибка чтения файла:', err);
-        setContent('<p>Не удалось загрузить содержимое.</p>');
-      });
-  }, [activeFile]);
+      .catch(err => console.error('Ошибка загрузки файлов:', err));
+  }, [activeCategory]);
 
-  // Загрузка нового файла
-  const handleUpload = (e) => {
-    const file = e.target.files[0];
-    const formData = new FormData();
-    formData.append('file', file);
+  // Загрузка содержимого файла
+  useEffect(() => {
+    if (!activeFile || !activeCategory) return;
 
-    fetch('http://localhost:80/api/instructions/upload', {
-      method: 'POST',
-      body: formData
-    })
+    fetch(`http://localhost:80/api/instructions/${activeCategory}/${activeFile}`)
       .then(res => res.json())
       .then(data => {
-        alert('Файл успешно загружен');
-        window.location.reload(); // Обновляем список файлов
+        setContent(marked.parse(data.content));
       })
       .catch(err => {
-        console.error('Ошибка загрузки файла:', err);
-        alert('Ошибка загрузки файла');
+        console.error('Ошибка загрузки контента:', err);
+        setContent('<p>Не удалось загрузить инструкцию</p>');
       });
-  };
+  }, [activeCategory, activeFile]);
 
   if (loading) return <p>Загрузка инструкций...</p>;
 
@@ -63,23 +55,36 @@ export default function Instructions() {
     <div className="page instructions">
       <h2>Инструкции</h2>
 
-      {/* Вкладки */}
-      <div className="tab-list">
-        {files.map((file, i) => (
+      {/* Категории */}
+      <div className="tab-list level-1">
+        {categories.map((cat, i) => (
           <button
             key={i}
-            onClick={() => setActiveFile(file)}
-            className={activeFile === file ? 'tab-button active' : 'tab-button'}
+            onClick={() => setActiveCategory(cat)}
+            className={activeCategory === cat ? 'tab-button active' : 'tab-button'}
           >
-            {file}
+            {cat === 'shift' ? 'Инструкции сменного' : 'Доп. инструкции'}
           </button>
         ))}
       </div>
 
-      {/* Содержимое выбранной вкладки */}
+      {/* Файлы внутри категории */}
+      {files.length > 0 && (
+        <div className="tab-list level-2" style={{ marginTop: '2rem' }}>
+          {files.map((file, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveFile(file)}
+              className={activeFile === file ? 'tab-button active' : 'tab-button'}
+            >
+              {file.replace('.md', '').replace(/[-_]/g, ' ')}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Содержимое Markdown */}
       <div className="markdown-output" dangerouslySetInnerHTML={{ __html: content }} />
-
-
     </div>
   );
 }
